@@ -1,0 +1,112 @@
+# Privacy Policy — CRM Mobile
+
+**Last updated:** October 16, 2026
+
+## 1. Application Name
+
+**CRM Mobile** (Package ID: `ro.globalsoftsys.crm`)
+
+## 2. Company / Developer Name
+
+**Global Software Systems** (Global Software Systems S.R.L.)  
+
+## 3. What Data the Application Collects
+
+The application is intended exclusively for authorized users of the CRM platform. Depending on usage and assigned permissions, the following categories of data may be processed:
+
+### 3.1. Authentication and Identity Data
+
+- Authentication token (`crm_api_token`) issued upon successful login;
+- Saved username;
+- User profile and identity details retrieved from the server context:
+  - First name (`firstName`);
+  - Last name (`lastName`);
+  - Assigned user roles / access permissions (`userRoles`);
+  - Timezone preferences (`timezone`).
+
+These data are stored locally on the device in encrypted secure storage for the duration of the active session.
+
+### 3.2. Operational Data Accessed via API
+
+Following authentication, the application displays and processes professional business data from the CRM system (subject to user permissions), including:
+
+- Active projects, project details, and milestone tracking;
+- Opportunities, sales pipelines, and business leads;
+- Business contacts, client accounts, and corporate partner data;
+- Tasks, calendar events, schedules, and terms;
+- Financial and billing records (invoices, payments, credit card expense tracking, exchange rates);
+- Leave requests, team members, designers, and user management;
+- Business documents and attachments temporarily downloaded to the device for viewing or selected for upload to CRM records.
+
+These data originate directly from the CRM backend infrastructure and are processed strictly for business operations, not for marketing or behavioral profiling.
+
+### 3.3. Data the Application Does NOT Collect
+
+The application **does not** use third-party analytics SDKs, advertising networks, tracking tools, or behavioral profiling tools.  
+We **do not** collect GPS location, personal address book contacts, personal calendars, or microphone data. Camera and photo/file storage are accessed only when the user explicitly chooses to attach documents or images to CRM records.
+
+## 4. Why Data Is Used
+
+Data is processed exclusively for:
+
+- Authenticating the user and maintaining secure sessions;
+- Authorizing access to specific CRM modules and functions according to assigned roles;
+- Secure communication with the CRM gateway and APIs (`https://crm.globalsoftsys.ro`);
+- Displaying, creating, updating, and managing business operations, records, and documents;
+- Delivering push notifications (via Firebase Cloud Messaging) regarding assigned tasks, events, and operational updates;
+- Ensuring application stability, proper operation, and system security.
+
+## 5. How Data Is Shared
+
+Data is **never sold** and is **never shared with third parties for commercial or advertising purposes**.
+
+Data is transmitted solely to:
+
+- **The CRM backend servers and gateway**, in order to provide the core service functionalities;
+- **Push notification infrastructure** (Firebase Cloud Messaging / Google), strictly for transmitting application notifications and alerts to your device.
+
+All transmissions are conducted over secure, encrypted channels (HTTPS/TLS).
+
+Data may be disclosed to competent authorities only if required by a legal obligation.
+
+## 6. How Data Is Protected
+
+We implement reasonable technical and organizational security measures to safeguard data, including:
+
+- Local storage of session tokens and credentials in **hardware-backed secure storage** (EncryptedSharedPreferences on Android; Keychain on iOS via `flutter_secure_storage`);
+- Secure client-server communication using **HTTPS / TLS encryption**;
+- Restriction and disabling of debug logging in production release builds;
+- Protection against storing plain-text passwords in persistent storage;
+- Access restricted exclusively to authenticated and authorized organizational accounts.
+
+## 7. How Long Data Is Retained
+
+| Data Type | Retention Period |
+|---|---|
+| Tokens and session data on device | Until logout, session expiration, or application uninstall |
+| Temporary downloaded files / attachments on device | Temporary, for viewing; removed upon clearing cache or uninstalling |
+| Data stored on CRM backend servers | In accordance with company retention policies, service agreements, and applicable legal obligations |
+
+Users can remove all locally stored data from their device at any time by logging out and/or uninstalling the application.
+
+## 8. How Users Can Request Data Deletion
+
+### 8.1. Data Stored Locally on the Device
+
+Users can:
+
+1. Tap **Logout** within the application drawer/menu — this immediately deletes the local authentication token, session data, and cached credentials.
+2. Uninstall the application — this completely removes all application files, caches, and locally stored data from the device.
+
+### 8.2. Account and Server-Stored Data
+
+To request access to, rectification of, restriction of, or deletion of personal and account data stored within the CRM system, users should contact their company administrator or reach out to the developer/operator at the contact details below. Requests will be handled in compliance with applicable data protection legislation (including GDPR, where applicable) and organizational policies.
+
+## 9. Contact Information
+
+**Global Software Systems**  
+- **Email:** `andrei.spoiala2401@gmail.com` 
+
+## 10. Changes to This Privacy Policy
+
+We may update this Privacy Policy to reflect changes in the application or our data processing practices. The date at the beginning of this document indicates the current revision. Continued use of the application following updates constitutes acceptance of the revised policy to the extent permitted by law.
